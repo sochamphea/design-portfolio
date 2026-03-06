@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design — Sochamphea</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .projects-grid-new {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .proj-card {
+      border-radius: 20px;
+      aspect-ratio: 3/4;
+      position: relative;
+      cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 12px;
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      background-size: cover;
+      background-position: center;
+    }
+    .proj-card:hover {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 10px 28px rgba(61,26,110,0.18);
+    }
+    .proj-card-inner {
+      position: relative;
+      z-index: 1;
+    }
+    .proj-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--purple-deep);
+      line-height: 1.25;
+      margin-bottom: 5px;
+      display: block;
+    }
+    .proj-type {
+      font-size: 9.5px;
+      color: var(--text-body);
+      display: block;
+      line-height: 1.4;
+    }
+    .proj-year {
+      font-size: 9px;
+      color: var(--text-light);
+      display: block;
+    }
+    @media (max-width: 900px) { .projects-grid-new { grid-template-columns: repeat(4, 1fr); } }
+    @media (max-width: 600px) { .projects-grid-new { grid-template-columns: repeat(3, 1fr); gap: 10px; } }
+    @media (max-width: 380px) { .projects-grid-new { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-logo"><img src="images/SOSO_logo.jpg" alt="So. logo"></a>
+    <a href="index.html">Profile</a>
+    <a href="design.html" class="active">Design</a>
+    <a href="craft.html">Craft</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="page-wrapper" style="max-width:1000px;">
+    <div class="projects-grid-new">
+
+      <a href="pages/instagram-highlight.html" class="proj-card" style="background-image:url('images/Fond_20.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Instagram Highlight</span><span class="proj-type">Graphics</span><span class="proj-year">2026</span></div></a>
+      <a href="pages/journey-map.html" class="proj-card" style="background-image:url('images/Fond_15.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Journey Map</span><span class="proj-type">UX Research</span><span class="proj-year">2025</span></div></a>
+      <a href="pages/design-centers.html" class="proj-card" style="background-image:url('images/Fond_16.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Designs Centers</span><span class="proj-type">Communication</span><span class="proj-year">2025</span></div></a>
+      <a href="pages/defense.html" class="proj-card" style="background-image:url('images/Fond_18.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Defense</span><span class="proj-type">UX/UI Design</span><span class="proj-year">2025</span></div></a>
+      <a href="pages/laval-website.html" class="proj-card" style="background-image:url('images/Fond_16.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Website</span><span class="proj-type">UX Design</span><span class="proj-year">2025</span></div></a>
+      <a href="pages/nocktail.html" class="proj-card" style="background-image:url('images/Fond_17.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Nonocktail Menu</span><span class="proj-type">Graphics</span><span class="proj-year">2024</span></div></a>
+
+      <a href="pages/government-website.html" class="proj-card" style="background-image:url('images/Fond_16.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Government Website</span><span class="proj-type">UX/UI Design</span><span class="proj-year">2024</span></div></a>
+      <a href="pages/service-blueprint.html" class="proj-card" style="background-image:url('images/Fond_15.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Service Blueprint</span><span class="proj-type">UX Research</span><span class="proj-year">2024</span></div></a>
+      <a href="pages/hive.html" class="proj-card" style="background-image:url('images/Fond_20.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Mobile First</span><span class="proj-type">UX/UI/Graphics</span><span class="proj-year">2023</span></div></a>
+      <a href="pages/government-app.html" class="proj-card" style="background-image:url('images/Fond_15.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Government App</span><span class="proj-type">UX/UI Design</span><span class="proj-year">2022</span></div></a>
+      <a href="pages/liggo.html" class="proj-card" style="background-image:url('images/Fond_20.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Machining Tool</span><span class="proj-type">UX/UI Design</span><span class="proj-year">2021</span></div></a>
+      <a href="pages/financial-tool.html" class="proj-card" style="background-image:url('images/Fond_18.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Financial Tool</span><span class="proj-type">UX/UI Design</span><span class="proj-year">2021</span></div></a>
+
+      <a href="pages/operator-tool.html" class="proj-card" style="background-image:url('images/Fond_15.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Operator Tool</span><span class="proj-type">UX/UI Design</span><span class="proj-year">2020</span></div></a>
+      <a href="pages/marine-tool.html" class="proj-card" style="background-image:url('images/Fond_16.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Marine Tool</span><span class="proj-type">UX/UI/Graphics</span><span class="proj-year">2019</span></div></a>
+      <a href="pages/elearning.html" class="proj-card" style="background-image:url('images/Fond_15.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">E-learning Tool</span><span class="proj-type">UX/UI Design</span><span class="proj-year">2019</span></div></a>
+      <a href="pages/ecommerce.html" class="proj-card" style="background-image:url('images/Fond_17.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">E-commerce Website</span><span class="proj-type">UI Design</span><span class="proj-year">2019</span></div></a>
+      <a href="pages/seo-pages.html" class="proj-card" style="background-image:url('images/Fond_16.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">SEO Pages</span><span class="proj-type">UX Design</span><span class="proj-year">2018</span></div></a>
+      <a href="pages/loccitane.html" class="proj-card" style="background-image:url('images/Fond_20.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">E-commerce Website</span><span class="proj-type">UX/UI Design</span><span class="proj-year">2018</span></div></a>
+
+      <a href="pages/mobile-services.html" class="proj-card" style="background-image:url('images/Fond_19.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Mobile Services</span><span class="proj-type">UX/UI Design</span><span class="proj-year">2018</span></div></a>
+      <a href="pages/rewards-tool.html" class="proj-card" style="background-image:url('images/Fond_15.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Rewards Tool</span><span class="proj-type">UX Design</span><span class="proj-year">2018</span></div></a>
+      <a href="pages/ecommerce-tool.html" class="proj-card" style="background-image:url('images/Fond_20.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">E-Commerce Tool</span><span class="proj-type">UX/UI Design</span><span class="proj-year">2017</span></div></a>
+      <a href="pages/retirement-website.html" class="proj-card" style="background-image:url('images/Fond_16.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Retirement Website</span><span class="proj-type">UX Design</span><span class="proj-year">2016</span></div></a>
+      <a href="pages/mobile-user-flow.html" class="proj-card" style="background-image:url('images/Fond_20.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Mobile User Flow</span><span class="proj-type">UX/UI Design</span><span class="proj-year">2016</span></div></a>
+      <a href="pages/logo-website.html" class="proj-card" style="background-image:url('images/Fond_18.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Logo &amp; Website idea</span><span class="proj-type">Graphics</span><span class="proj-year">2016</span></div></a>
+
+      <a href="pages/insurance-flow.html" class="proj-card" style="background-image:url('images/Fond_16.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Insurance Flow</span><span class="proj-type">UX Design</span><span class="proj-year">2016</span></div></a>
+      <a href="pages/startup-foodbox.html" class="proj-card" style="background-image:url('images/Fond_19.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Start-up Food Box</span><span class="proj-type">Graphics</span><span class="proj-year">2015</span></div></a>
+      <a href="pages/startup-fruits.html" class="proj-card" style="background-image:url('images/Fond_20.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Start-up Fruits Food</span><span class="proj-type">Graphics</span><span class="proj-year">2015</span></div></a>
+      <a href="pages/resto-bar-menu.html" class="proj-card" style="background-image:url('images/Fond_17.jpg');background-size:cover;background-position:center;"><div class="proj-card-inner"><span class="proj-title">Resto &amp; Bar Menu</span><span class="proj-type">Graphics</span><span class="proj-year">2014</span></div></a>
+
+    </div>
+    <footer>© 2026 Sochamphea Mao</footer>
+  </div>
+</body>
+</html>

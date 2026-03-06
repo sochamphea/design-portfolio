@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Craft — Sochamphea</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .craft-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .craft-blob-card {
+      border-radius: 20px;
+      aspect-ratio: 3/4;
+      position: relative;
+      cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 12px;
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      background-size: cover;
+      background-position: center;
+    }
+    .craft-blob-card:hover {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 10px 28px rgba(61,26,110,0.18);
+    }
+    .craft-blob-inner {
+      position: relative;
+      z-index: 1;
+    }
+    .craft-blob-inner .craft-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--purple-deep);
+      display: block;
+      margin-bottom: 6px;
+    }
+    .craft-blob-inner .craft-type {
+      font-size: 11px;
+      color: var(--text-body);
+      display: block;
+    }
+    .craft-blob-inner .craft-year {
+      font-size: 10px;
+      color: var(--text-light);
+      display: block;
+    }
+    @media (max-width: 600px) { .craft-grid { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo"><img src="images/SOSO_logo.jpg" alt="So. logo"></a>
+    <a href="index.html">Profile</a>
+    <a href="design.html">Design</a>
+    <a href="craft.html" class="active">Craft</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="page-wrapper">
+    <div class="craft-grid">
+
+      <a href="pages/mexico.html" class="craft-blob-card" style="background-image:url('images/Fond_18.jpg')">
+        <div class="craft-blob-inner">
+          <span class="craft-title">Mexico</span>
+          <span class="craft-type">Photography</span>
+          <span class="craft-year">2025</span>
+        </div>
+      </a>
+
+    </div>
+
+    <footer>© 2026 Sochamphea Mao</footer>
+  </div>
+
+</body>
+</html>

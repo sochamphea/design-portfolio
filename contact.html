@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Sochamphea</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .contact-hero {
+      padding: 40px 0 32px;
+    }
+    .contact-hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.8rem, 7vw, 5rem);
+      font-weight: 400;
+      color: var(--purple-deep);
+      line-height: 1.1;
+      margin-bottom: 36px;
+    }
+    .contact-card {
+      border: 1.5px solid rgba(100,60,180,0.15);
+      border-radius: 24px;
+      padding: 36px 40px;
+      background: rgba(255,255,255,0.5);
+      max-width: 640px;
+    }
+    .contact-card p {
+      font-size: 15px;
+      color: var(--text-body);
+      margin-bottom: 28px;
+    }
+    .contact-card h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--purple-mid);
+      margin-bottom: 10px;
+    }
+    .contact-email {
+      font-size: 14px;
+      color: var(--text-body);
+      margin-bottom: 20px;
+    }
+    .contact-email a {
+      color: var(--text-body);
+      text-decoration: none;
+    }
+    .contact-email a:hover { color: var(--purple-deep); }
+    .social-icons {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    .social-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 20px;
+      transition: transform 0.2s ease;
+    }
+    .social-icon:hover { transform: scale(1.1); }
+    .icon-linkedin { background: #0077b5; color: white; font-weight: bold; font-size: 14px; font-family: 'DM Sans', sans-serif; }
+    .icon-instagram { background: radial-gradient(circle at 30% 110%, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; font-size: 18px; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo"><img src="images/SOSO_logo.jpg" alt="So. logo"></a>
+    <a href="index.html">Profile</a>
+    <a href="design.html">Design</a>
+    <a href="craft.html">Craft</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <div class="page-wrapper">
+    <section class="contact-hero">
+      <h1>Sochamphea.<br>Designer in Montreal.</h1>
+
+      <div class="contact-card">
+        <p>Let's talk about your future project!</p>
+        <h2>Contact informations</h2>
+        <p class="contact-email">E-mail : <a href="mailto:mao.sochamphea@gmail.com">mao.sochamphea@gmail.com</a></p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/sochamphea-mao-ux-ui-designer/?locale=en-US" target="_blank" aria-label="LinkedIn">
+            <img src="images/linkedin-logo.png" alt="LinkedIn" style="width:44px;height:44px;border-radius:50%;">
+          </a>
+          <a href="https://www.instagram.com/so.design.and.craft/" target="_blank" aria-label="Instagram">
+            <img src="images/instagram-logo.png" alt="Instagram" style="width:44px;height:44px;border-radius:50%;">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>© 2026 Sochamphea Mao</footer>
+  </div>
+
+</body>
+</html>

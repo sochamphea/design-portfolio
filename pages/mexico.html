@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mexico Photography — Sochamphea</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .photo-grid-item {
+      aspect-ratio: 3/4;
+      background: linear-gradient(135deg, #c8e8f8 0%, #a0c8e0 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      color: rgba(255,255,255,0.8);
+    }
+    .photo-grid-row {
+      background: rgba(255,255,255,0.4);
+      border-radius: 16px;
+      padding: 8px;
+      margin-bottom: 8px;
+    }
+    @media (max-width: 480px) {
+      .photo-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo"><img src="../images/SOSO_logo.jpg" alt="So. logo"></a>
+    <a href="../index.html">Profile</a>
+    <a href="../design.html">Design</a>
+    <a href="../craft.html" class="active">Craft</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <a href="../craft.html" class="btn-back">‹ Back</a>
+
+    <!-- Hero -->
+    <div style="border-radius:20px;overflow:hidden;margin-bottom:40px;position:relative;aspect-ratio:16/7;">
+      <img src="../images/projects/Mexico_1.jpg" alt="Mexico – Cancún aerial view" style="width:100%;height:100%;object-fit:cover;">
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(255,255,255,0.92);border-radius:50%;width:100px;height:100px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:12px;">
+        <span style="font-family:'Cormorant Garamond',serif;font-size:0.9rem;font-weight:600;color:#3d1a6e;">Mexico</span>
+        <span style="font-size:10px;color:#333;">Photography</span>
+        <span style="font-size:9px;color:#888;">2025</span>
+      </div>
+    </div>
+
+    <!-- Photo rows -->
+    <div class="photo-grid-row">
+      <div class="photo-grid">
+        <div class="photo-grid-item" style="background:none;">
+          <img src="../images/projects/Mexico_2.jpg" alt="Mexico – Beach with palapa umbrellas" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="photo-grid-item" style="background:none;">
+          <img src="../images/projects/Mexico_3.jpg" alt="Mexico – Lighthouse and palm tree" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="photo-grid-item" style="background:none;">
+          <img src="../images/projects/Mexico_4.jpg" alt="Mexico – Street mural The Mint" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+      </div>
+    </div>
+
+    <div class="photo-grid-row">
+      <div class="photo-grid">
+        <div class="photo-grid-item" style="background:none;">
+          <img src="../images/projects/Mexico_5.jpg" alt="Mexico – Sunset from boat" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="photo-grid-item" style="background:none;">
+          <img src="../images/projects/Mexico_6.jpg" alt="Mexico – Colorful papel picado street" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="photo-grid-item" style="background:none;">
+          <img src="../images/projects/Mexico_7.jpg" alt="Mexico – Red bougainvillea" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+      </div>
+    </div>
+
+    <footer>© 2026 Sochamphea Mao</footer>
+  </div>
+
+</body>
+</html>
